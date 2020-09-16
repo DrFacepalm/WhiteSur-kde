@@ -3,6 +3,8 @@
 
 WhiteSur kde is a MacOS big sur like theme for KDE Plasma desktop.
 
+This fork provides a release for use with nixpkgs
+
 In this repository you'll find:
 
 - Aurorae Theme
