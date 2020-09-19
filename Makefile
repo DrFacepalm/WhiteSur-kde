@@ -1,11 +1,11 @@
 PREFIX ?= /usr
 IGNORE ?=
-THEMES ?= aurorae color-schemes konsole konversation Kvantum plasma wallpapers yakuake
+THEMES ?= aurorae color-schemes Kvantum plasma wallpapers latte-dock sddm
+
+THEMES := $(filter-out $(IGNORE), $(THEMES))
 
 all:
 
 install:
-		./install.sh
-
-uninstall:
-		./uninstall.sh
+		mkdir -p $(DESTDIR)$(PREFIX)/share
+		cp -R $(THEMES) $(DESTDIR)$(PREFIX)/share
